@@ -4,8 +4,8 @@ const path = require("path");
 const isProduction = process.env.NODE_ENV === "production";
 
 module.exports = {
-  entry: "./src/rxmarble-diagram.js",
-  mode: "development",
+  entry: ["./src/rxmarble-diagram"],
+  mode: isProduction?'production':'development',
   output: {
     publicPath: path.resolve(__dirname, "dist"),
     filename: "index.js",

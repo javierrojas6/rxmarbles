@@ -1,6 +1,7 @@
 import { zip } from "rxjs/observable/zip";
-import { marbleDiagram } from "./rxmarble-diagram";
-
+import { drawDiagram } from "./rxmarble-diagram";
+// const drawDiagram = require('./rxmarble-diagram');
+console.log('drawDiagram: ', drawDiagram);
 const operator = {
   label: "Mi Op",
   inputs: [
