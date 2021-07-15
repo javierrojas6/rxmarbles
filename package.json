@@ -2,6 +2,8 @@
   "name": "rxmarbles",
   "version": "1.0.0",
   "author": "Javier Rojas",
+  "type": "module",
+  "main": "rxmarble-diagram.js",
   "contributors": [
     {
       "name": "Javier Rojas"
