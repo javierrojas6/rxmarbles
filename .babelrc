@@ -1,0 +1,46 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        [
+          "babel-preset-env",
+          {
+            "targets": {
+              "node": "6.10"
+            }
+          }
+        ]
+      ],
+      "plugins": ["transform-object-rest-spread", "transform-class-properties"]
+    },
+    "browser": {
+      "presets": [
+        [
+          "babel-preset-env",
+          {
+            "targets": {
+              "browsers": "last 2 versions, ie 10-11"
+            },
+            "modules": false
+          }
+        ]
+      ],
+      "plugins": ["transform-object-rest-spread", "transform-class-properties"]
+    },
+    "module": {
+      "presets": [
+        [
+          "babel-preset-env",
+          {
+            "targets": {
+              "node": "6.10"
+            },
+            "modules": false
+          }
+        ]
+      ],
+      "plugins": ["transform-object-rest-spread", "transform-class-properties"]
+    }
+  },
+  "sourceMaps": true
+}
