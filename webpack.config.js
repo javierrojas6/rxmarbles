@@ -4,13 +4,13 @@ const path = require("path");
 const isProduction = process.env.NODE_ENV === "production";
 
 module.exports = {
-  entry: ["./src/rxmarble-diagram"],
+  entry: ["./src/example"],
   mode: isProduction?'production':'development',
   output: {
     publicPath: path.resolve(__dirname, "dist"),
     filename: "index.js",
     library: "rxmarbleDiagram",
-    clean: true,
+    // clean: true,
   },
   devtool: isProduction ? "source-map" : "inline-source-map",
   devServer: {

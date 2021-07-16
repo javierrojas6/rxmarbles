@@ -1,9 +1,12 @@
 import { zip } from "rxjs/observable/zip";
+import {  concat  } from "rxjs/observable/concat";
+import {  combineLatest } from "rxjs/observable/combineLatest";
+import {  merge } from "rxjs/observable/merge";
+
 import { drawDiagram } from "./rxmarble-diagram";
-// const drawDiagram = require('./rxmarble-diagram');
-console.log('drawDiagram: ', drawDiagram);
+
 const operator = {
-  label: "Mi Op",
+  label: "My Operator",
   inputs: [
     [
       { t: 0, c: 1 },
@@ -22,6 +25,10 @@ const operator = {
   ],
   apply: (inputs) =>
     zip(inputs[0], inputs[1], (x, y) => x.content + "|" + y.content),
+    // combineLatest(inputs[0], inputs[1], (x, y) => ('' + x.content + y.content)),
+    // concat(...inputs),
+    // merge(...inputs),
+    
 };
 
 const element = document.createElement("div");

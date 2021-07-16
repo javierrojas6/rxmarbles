@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/components/timeline/timeline-constants.js"],"names":["MARBLE_SIZE","STROKE_WIDTH"],"mappings":";;;;;AAAO,MAAMA,WAAW,WAAXA,WAAW,GAAG,GAApB;AACA,MAAMC,YAAY,WAAZA,YAAY,GAAG,GAArB","sourcesContent":["export const MARBLE_SIZE = 2.3;\nexport const STROKE_WIDTH = 0.3;\n"],"file":"timeline-constants.js"}

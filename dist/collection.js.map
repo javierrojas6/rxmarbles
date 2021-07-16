@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/collection.js"],"names":["Collection","rxjsAdapter"],"mappings":";;;;;;;AAAA;;AACA;;;;;;AAEO,MAAMA,UAAU,WAAVA,UAAU,GAAG,gCAAeC,qBAAf,CAAnB","sourcesContent":["import { makeCollection } from '@cycle/collection';\nimport rxjsAdapter from '@cycle/rxjs-adapter';\n\nexport const Collection = makeCollection(rxjsAdapter);\n"],"file":"collection.js"}
